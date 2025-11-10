@@ -1,0 +1,52 @@
+name: presencepoint
+description: "Geolocation Attendance App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.13.0
+  #firebase_auth: ^5.5.2 # Updated to the latest version
+  google_fonts: ^6.1.0 # Updated to the latest version
+  shimmer: ^3.0.0
+  google_maps_flutter: ^2.12.1
+  permission_handler: ^12.0.0+1
+  shared_preferences: ^2.5.3
+  #flutter_heatmap_calendar: ^1.0.5
+  #cloud_firestore: ^5.6.6
+  table_calendar: ^3.0.8
+  supabase_flutter: ^2.8.4
+  geolocator: ^12.0.0
+  image_picker: ^1.1.2
+  location: ^8.0.0
+  cached_network_image: ^3.4.1
+  intl: "0.17.0"
+  fl_chart: ^0.70.2
+  path_provider: ^2.0.0
+  file_saver: ^0.2.12
+  charts_flutter: ^0.12.0
+  # flutter_riverpod: ^2.5.1  # If you are using Riverpod
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Updated to the latest version
+  flutter_launcher_icons: ^0.13.1 # Add the latest version of flutter_launcher_icons
+
+flutter:
+  uses-material-design: true
+  assets:
+   # - assets/images/
+    - assets/icons/ #Add this line if you are using a separate icons folder.
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icons/app_icon.png" # Path to your 1024x1024 icon.
+  min_sdk_android: 21
+  # adaptive_icon_background: "assets/icons/background.png" # Optional background layer.
+  # adaptive_icon_foreground: "assets/icons/foreground.png" # Optional foreground layer.
